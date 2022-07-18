@@ -1,3 +1,3 @@
 Run the application using
 
-```python main.py```
+```python -m geektrust "sample_input.txt"```
