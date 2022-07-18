@@ -8,7 +8,7 @@ class InputReaderService(InputReaderInterface, ABC):
     def read_input(self, buy_order_controller, sell_order_controller, filename):
         file = open(filename, "r")
         for input in file:
-            order_data = input.strip().split(' ')
+            order_data = input.strip().split()
             id = order_data[0]
             time = order_data[1]
             stock = order_data[2]
