@@ -5,8 +5,8 @@ from interfaces.input_reader_interface import InputReaderInterface
 
 
 class InputReaderService(InputReaderInterface, ABC):
-    def read_input(self, buy_order_controller, sell_order_controller):
-        file = open("sample_input.txt", "r")
+    def read_input(self, buy_order_controller, sell_order_controller, filename):
+        file = open(filename, "r")
         for input in file:
             order_data = input.strip().split(' ')
             id = order_data[0]

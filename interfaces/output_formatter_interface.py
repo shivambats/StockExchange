@@ -1,9 +1,9 @@
 import abc
 
-from interfaces.order_service_interface import OrderServiceInterface
+from interfaces.buy_order_service_interface import BuyOrderServiceInterface
 
 
 class OutputFormatterInterface(metaclass=abc.ABCMeta):
     @abc.abstractmethod
-    def format_response(self, buy_order_service: OrderServiceInterface):
+    def format_response(self, buy_order_service: BuyOrderServiceInterface):
         pass

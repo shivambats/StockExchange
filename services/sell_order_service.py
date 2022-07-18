@@ -1,10 +1,10 @@
 from abc import ABC
 
 from models.order import Order
-from interfaces.order_service_interface import OrderServiceInterface
+from interfaces.sell_order_service_interface import SellOrderServiceInterface
 
 
-class SellOrderService(OrderServiceInterface, ABC):
+class SellOrderService(SellOrderServiceInterface, ABC):
     def __init__(self):
         self.orders = []
 

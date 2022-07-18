@@ -3,7 +3,7 @@ import abc
 from models.order import Order
 
 
-class OrderServiceInterface(metaclass=abc.ABCMeta):
+class BuyOrderServiceInterface(metaclass=abc.ABCMeta):
     @abc.abstractmethod
     def addOrder(self, order: Order):
         pass
